@@ -1,16 +1,11 @@
 export declare class MyComponent {
-  /**
-   * The first name
-   */
-  first: string;
-  /**
-   * The middle name
-   */
-  middle: string;
-  /**
-   * The last name
-   */
-  last: string;
-  private getText;
+  formControls: {
+    firstName: any;
+    lastName: any;
+    age: any;
+    gender: any;
+  };
+  changeFormValue(controlName: any, value: any): void;
+  handleSubmit(e: any): void;
   render(): any;
 }
